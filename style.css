@@ -1,0 +1,269 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #3498db, #e74c3c, #1abc9c, #f39c12);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+    color: #343a40;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    background: linear-gradient(to right, #007bff, #00bcd4);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #0056b3;
+    transition: background 0.3s ease-in-out;
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.logo-container img {
+    max-width: 150px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #343a40;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #343a40;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+/* About Section Styles */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Services Section Styles */
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    flex: 0 0 45%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .logo-container {
+        left: 10px;
+    }
+    .hero {
+        padding: 50px 0;
+    }
+    .about-container, .services-container, .contact-container {
+        padding: 20px;
+    }
+    .service {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 30px 0;
+    }
+}
+
+/* ... existing styles ... */
+
+/* ... existing styles ... */
+
+/* New Styles for the Profile Section */
+.profile-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100px;
+}
+
+.profile-section img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+header {
+    position: relative;
+    z-index: 1; /* Ensure the header is above the profile photo */
+}
+
+/* ... existing styles ... */
+
+
+/* ... existing styles ... */
+
+/* ... existing styles ... */
+
+/* New Styles for the Instagram Icon in the Header */
+.instagram-header {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2; /* Ensure it's above other elements */
+}
+
+.instagram-header img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* ... existing styles ... */
+/* ... (existing styles) ... */
+
+/* New Styles for Help Option and Sub-Options */
+/* ... (existing styles) ... */
+
+/* New Styles for Help Option and Sub-Options */
+.help-option {
+    position: relative;
+}
+
+.sub-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.help-option:hover .sub-options {
+    display: block;
+}
+
+.sub-options li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-options li:last-child {
+    border-bottom: none;
+}
+
+/* New Styles for Contact Options */
+.contact-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contact-option {
+    text-align: center;
+}
+
+.contact-option i {
+    font-size: 36px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.contact-text {
+    display: block;
+    font-size: 14px;
+}
+
+.flashing-text {
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
